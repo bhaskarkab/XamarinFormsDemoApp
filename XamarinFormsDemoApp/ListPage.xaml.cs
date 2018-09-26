@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 
 using Xamarin.Forms;
+using XamarinFormsDemoApp.Model;
 
 namespace XamarinFormsDemoApp
 {
@@ -11,16 +12,8 @@ namespace XamarinFormsDemoApp
         {
             InitializeComponent();
 
-            var names = new List<string>
-            {
-                "Bhaskar",
-                "Mosh",
-                "John",
-                "Peter",
-                "Ruby"
-            };
-
-            listView.ItemsSource = names;
+            Contact contacts = new Contact();
+            listView.ItemsSource = contacts.GetContacts();
         }
     }
 }

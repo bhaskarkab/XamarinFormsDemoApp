@@ -9,7 +9,16 @@
     </ContentPage.Padding>
 
     <ContentPage.Content>
-        <ListView x:Name="listView" SeparatorColor="Blue" SeparatorVisibility="None" />
+        <ListView x:Name="listView" >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <!--<TextCell Text="{Binding Name}" Detail="{Binding Status}" />-->
+                      <ImageCell Text="{Binding Name}" 
+                                 Detail="{Binding Status}"
+                                 ImageSource="{Binding ImageUrl}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </ContentPage.Content>
     
 </ContentPage>
