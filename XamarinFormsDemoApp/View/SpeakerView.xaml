@@ -34,8 +34,8 @@
                                 <StackLayout>
                                     <Label Text="{Binding Topic}" FontSize="20"/>
                                     <Image Source="{Binding ImageUrl}" 
-                                           WidthRequest="150"
-                                           HeightRequest="150"/>
+                                           WidthRequest="100"
+                                           HeightRequest="100"/>
                                     <Label Text="{Binding SpeakerName}"
                                            FontSize="18"/>
                                     <Label Text="{Binding Description}" 
