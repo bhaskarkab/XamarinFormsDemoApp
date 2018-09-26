@@ -16,7 +16,8 @@
             <Label Text="C# Conference 2017 Agenda" FontSize="30" />
             <ListView x:Name="listSpeakers" 
                       ItemsSource="{Binding Speakers}"
-                      HasUnevenRows="true">
+                      HasUnevenRows="true"
+                      Margin="30,10">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                        <!-- <TextCell Text="{Binding Topic}"

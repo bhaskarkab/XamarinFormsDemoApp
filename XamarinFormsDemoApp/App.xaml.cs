@@ -12,7 +12,8 @@ namespace XamarinFormsDemoApp
             InitializeComponent();
 
             //MainPage = new MainPage();
-            MainPage = new XamarinFormsDemoApp.View.SpeakerView();
+            //MainPage = new XamarinFormsDemoApp.View.SpeakerView();
+            MainPage = new XamarinFormsDemoApp.ListPage();
         }
 
         protected override void OnStart()
